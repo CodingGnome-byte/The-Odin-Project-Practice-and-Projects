@@ -9,15 +9,17 @@ export const GsapFromTo = () => {
         //  accepts TWO IDs/Classes and applies props to element that is targeted (in this case #blue-box)
         // You can define both states here
         gsap.fromTo('#green-box', {
+            // from object
             x:0,
             rotation: 90,
             borderRadius: '0%'
         },
         {
+            // To Object
             x:250, // the animates across the x-axis
             repeat: -1, // sets if user wants the repeat animations
             yoyo: true, // loop animation
-            borderRadius: 360,
+            borderRadius: '100%',
             rotation: 360,
             duration: 1,
             ease: 'bounce.in'
