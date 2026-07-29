@@ -44,7 +44,7 @@ export const GsapStagger = () => {
                 </p>
 
 
-                <div className="mt-20">
+                <div className="mt-20 h-100">
                     <div className="flex gap-5">
                         <div className="w-20 h-20
                         bg-pink-200 rounded-lg

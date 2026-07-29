@@ -6,7 +6,9 @@ export const GsapTimeline = () => {
 
     // This is where you implement the gsap timeline
     const timeline = gsap.timeline({
-        repeat: -1, repeatDelay: 1, yoyo: true
+        repeat: -1,
+        repeatDelay: 1,
+        yoyo: true
     });
 
     // Each time you want to use gsap, you must use the hook
@@ -44,19 +46,21 @@ export const GsapTimeline = () => {
             </p>
             <p>
             </p>
-            <div className="mt-20 space-y-10">
-                <button onClick={() => {
-                    if(timeline.paused()){
-                        timeline.play();
-                    }else{
-                        timeline.pause();
-                    }
-                }}>
-                Play/Puase
-                </button>
-            </div>
+            <div className="h-100">
+                <div className="mt-20 space-y-10">
+                    <button onClick={() => {
+                        if(timeline.paused()){
+                            timeline.play();
+                        }else{
+                            timeline.pause();
+                        }
+                    }}>
+                    Play/Puase
+                    </button>
+                </div>
 
-            <div id="yellow-box" className="w-20 h-20 bg-yellow-200 border-lg"></div>
+                <div id="yellow-box" className="w-20 h-20 bg-yellow-200 border-lg"></div>
+            </div>
         </>
     )
 }
