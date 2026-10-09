@@ -28,8 +28,7 @@ export const GsapScrollTrigger = () => {
                 ease: 'power1.inOut'
             })
         })
-    }, {scope: scrollRef})
-
+    }, {scope: scrollRef
 
     return(
         <main>

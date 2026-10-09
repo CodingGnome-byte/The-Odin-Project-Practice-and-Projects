@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './App.css'
 import { GsapTo } from './components/GsapTo'
 import { GsapForm } from './components/GsapFrom'

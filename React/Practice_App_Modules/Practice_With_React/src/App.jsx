@@ -2,8 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+// Components
+import { Greeting } from './components/Greeting'
 
-// CSS NOTE: This is an example of inline styling 
+// CSS NOTE: This is an example of inline styling
 /**
  * May cause issues:
  *  - conflicts with other selectors and maintenance issues
@@ -36,11 +38,17 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-            
+
       <div className="card">
+        {/* the event handler for that change of state is declared within setCount*/}
         <button style={butt} onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button>
+        <button style={butt} onClick {}>
+          Click here to run function
+          {if }
+        </button>
+
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
